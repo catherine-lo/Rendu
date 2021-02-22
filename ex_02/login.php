@@ -10,24 +10,24 @@
       $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       if(isset($_POST["login"]))
       {
-           if(empty($_POST["username"]) || empty($_POST["password"]))
+           if(empty($_POST["name"]) || empty($_POST["password"]))
            {
                 $message = '<label>All fields are required</label>';
            }
            else
            {
-                $query = "SELECT * FROM users WHERE name = :username AND password = :password";
+                $query = "SELECT * FROM users WHERE name = :name AND password = :password";
                 $statement = $connect->prepare($query);
                 $statement->execute(
                      array(
-                          'name'     =>     $_POST["username"],
+                          'name'     =>     $_POST["name"],
                           'password'     =>     $_POST["password"]
                      )
                 );
                 $count = $statement->rowCount();
                 if($count > 0)
                 {
-                     $_SESSION["username"] = $_POST["username"];
+                     $_SESSION["name"] = $_POST["name"];
                      header("location:index.php");
                 }
                 else
@@ -59,10 +59,11 @@
                      echo '<label class="text-danger">'.$message.'</label>';
                 }
                 ?>
+
                 <h3 align="">PHP Login Script using PDO</h3><br />
                 <form method="post">
                      <label>Username</label>
-                     <input type="text" name="username" class="form-control" />
+                     <input type="text" name="name" class="form-control" />
                      <br />
                      <label>Password</label>
                      <input type="password" name="password" class="form-control" />
