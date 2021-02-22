@@ -45,7 +45,7 @@
  <!DOCTYPE html>
  <html>
       <head>
-           <title>Webslesson Tutorial | PHP Login Script using PDO</title>
+           <title>Login</title>
            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -60,7 +60,7 @@
                 }
                 ?>
 
-                <h3 align="">PHP Login Script using PDO</h3><br />
+                <h3 align="">Login</h3><br />
                 <form method="post">
                      <label>Username</label>
                      <input type="text" name="name" class="form-control" />
