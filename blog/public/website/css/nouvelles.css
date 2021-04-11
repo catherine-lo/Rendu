@@ -1,0 +1,271 @@
+body{
+    background-image: url('/website/images/background.jpeg');
+    background-size: 100vh;
+    background-size: 100vw;
+}
+
+/* HEADER */
+#header{
+    margin-bottom: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right:5px;
+    background-color:rgba(0, 0, 0, 0.4);
+    width:90%;
+}
+
+#btnMenu{
+    background:none;
+    border:none;
+    margin-top:20px;
+	margin-left: 13px;
+	margin-right: 13px;
+    font-size:150%;
+    font-weight: bold;
+    transform:scale(1);
+    transition: transform 600ms;
+	text-decoration: none;
+}
+
+#btnMenu:hover{
+    transform: scale(1.15);
+}
+
+#btnAccueil{
+	background:none;
+    border:none;
+    margin:1%;
+    font-size:150%;
+    font-weight: bold;
+    transform:scale(1);
+    transition: transform 600ms;
+}
+#btnAccueil:hover{
+    transform: scale(1.15);
+}
+#accueilLink{
+	text-decoration: none;
+	color:white;
+	font-weight: bolder;
+	font-size: 170%;
+}
+/* HEADER */
+
+/* FOOTER */
+footer{
+    color:white;
+    bottom:0px;
+    width:100%;
+    font-weight: bold;
+    text-align: center;
+    /* position:relative */
+}
+
+#footerLink{
+color:white;
+}
+/* FOOTER */
+
+/* NOUVELLES */
+#rowCards{
+    width:100%
+}
+#cardNouvelle{
+    margin:8px;
+    width:300px;
+    background-color:rgba(0, 0, 0, 0.8);
+    color:white;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+#btnNouvelle{
+    background-color: rgba(14, 18, 58, 0.825);
+    border-color: rgb(15, 19, 51);
+    float:right;
+    margin-left:10px;
+}
+
+#photoNouvelle{
+    height:250px;
+    width:100%;
+}
+
+.card-title{
+    font-weight: bolder;
+}
+
+/* NOUVELLES */
+
+/* BIGNOUVELLE */
+#bigNouvelle{
+    width:80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    background-color:rgba(0, 0, 0, 0.8);
+    border: solid rgb(209, 209, 209);
+    border-radius: 5px;
+    border-width:0.5px ;
+}
+#imgNouvelle{
+    max-width:100%;
+    max-height:400px;
+}
+#textBigCard{
+    text-align: justify;
+    color: white;
+}
+
+p{
+    color:white;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: large;
+}
+#titleBigCard{
+    color:white;
+    font-size: 150%;
+    font-weight: bolder;
+    margin-bottom:20px;
+}
+#commentaires{
+    color:white;
+    text-align: justify;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+#infosComm{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.modal-body{
+    text-align: left;
+    font-weight: bolder;
+}
+/* BIGNOUVELLE */
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+    .col-md-9{
+        width:100%;
+        margin-left:2px;
+    }
+    #btnMenu{
+        font-size: 90%;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: -15px;
+    }
+    #btnAccueil{
+        margin:5%;
+        font-size: medium;
+        text-align: center;
+    }
+    #cardNouvelle{
+        margin-left: auto;
+        margin-right: auto;
+        width : 80%;
+    }
+    #photoNouvelle{
+        width:80% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+		color:white;
+		position:fixed;
+		bottom:0px;
+		width:100%;
+		font-weight: bold;
+	}
+    #cardNouvelle{
+        margin-left: 70px;
+    }
+}
+
+@media (min-width:1100px){
+	body{
+		background-image: url('/website/images/bigScreen.jpg');
+	}
+	#header{
+		margin-left: 0;
+		margin-top: 0;
+		margin-right:0;
+        width:100%
+	}
+	#btnAccueil{
+		margin:5%;
+		margin-left:8%;
+		font-size: xx-large;
+	}
+	#btnMenu{
+		font-size: xx-large;
+		margin-top:50px;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: -15px;
+	}
+    #rowCards{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #cardNouvelle{
+        width:400px;
+        margin-left:2%;
+        margin-right: 2%;
+        margin-bottom: 3%;
+    }
+    #photoNouvelle{
+        width:80% !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+    footer{
+		position:relative;
+		bottom:0;
+		height: 50px;
+	}
+    #textBigCard{
+        text-align: justify;
+        margin-left:300px !important;
+    }
+}
+
+/* CONTACT */
+#contContact{
+    background-color: none;
+}
+#blocContact{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color:white;
+    font-size: larger;
+}
+#btnContact{
+    background-color: rgba(14, 18, 58, 0.825);
+    border-color: rgb(15, 19, 51);
+    float:right;
+    margin-top: 10px;
+}
+
+h1{
+    color: white;
+}
+/* CONTACT */
+
+
+
+#footP{
+    text-align: center;
+}
+
+footer{
+    position:absolute;
+    width:120%
+}

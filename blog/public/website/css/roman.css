@@ -1,0 +1,315 @@
+body{
+    background-image: url('/website/images/background.jpeg');
+    background-size: 100%;
+}
+
+/* HEADER */
+#header{
+    margin-bottom: 80px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right:5px;
+    background-color:rgba(0, 0, 0, 0.4)
+}
+
+#btnMenu{
+    background:none;
+    border:none;
+    margin-top:20px;
+	margin-left: 13px;
+	margin-right: 13px;
+    font-size:150%;
+    font-weight: bold;
+    transform:scale(1);
+    transition: transform 600ms;
+	text-decoration: none;
+}
+
+#btnMenu:hover{
+    transform: scale(1.15);
+}
+
+#btnAccueil{
+	background:none;
+    border:none;
+    margin:1%;
+    font-size:150%;
+    font-weight: bold;
+    transform:scale(1);
+    transition: transform 600ms;
+}
+#btnAccueil:hover{
+    transform: scale(1.15);
+}
+#accueilLink{
+	text-decoration: none;
+	color:white;
+	font-weight: bolder;
+	font-size: 170%;
+}
+/* HEADER */
+
+
+/* FOOTER */
+footer{
+    color:white;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    font-weight: bold;
+}
+
+#footerLink{
+    color:white;
+}
+/* FOOTER */
+
+/* BOOK */
+.bookWrap {
+	margin:37px auto;
+	height:1038px;
+	width:690px;
+
+	position:relative;
+
+	-webkit-perspective: 1200px;
+	   -moz-perspective: 1200px;
+	        perspective: 1200px;
+}
+
+.book {
+	background-image: url('/website/images/descriptionLivre.png');
+	height:1038px;
+	width:690px;
+	position:absolute;
+	left:16px;
+	top:0;
+
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	
+	-webkit-transition: -webkit-transform .5s ease 0s;
+	   -moz-transition: -moz-transform .5s ease 0s;
+	        transition: transform .5s ease 0s;
+	
+	-webkit-border-radius: 0 7px 7px 0;
+	   -moz-border-radius: 0 7px 7px 0;
+	        border-radius: 0 7px 7px 0;
+	
+	-webkit-perspective: 1200px;
+	   -moz-perspective: 1200px;
+	        perspective: 1200px;
+}
+
+.bookIntro {
+	-webkit-transform: rotateY(30deg);
+     -moz-transform: rotateY(30deg);
+	        transform: rotateY(30deg);
+}
+
+.cover {
+	position:absolute;
+	left:0;
+	top:0;
+
+	height: 100%;
+	width: 690px;
+
+	max-width: 690px;
+	max-height: 1038px;
+
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	        backface-visibility: hidden;
+
+	-webkit-border-radius: 0 4px 4px 0;
+	   -moz-border-radius: 0 4px 4px 0;
+	        border-radius: 0 4px 4px 0;
+
+	-webkit-transition: -webkit-transform .5s ease 0s, width .5s ease 0s;
+	   -moz-transition: -moz-transform .5s ease 0s, width .5s ease 0s;
+            transition: transform .5s ease 0s, width .5s ease 0s;
+
+	-webkit-transform-origin: 0;
+	   -moz-transform-origin: 0;
+	        transform-origin: 0;
+}
+
+.cover:hover {	
+	width:20px;
+	
+	-webkit-transform: rotateY(-20deg);
+	   -moz-transform: rotateY(-20deg);
+	        transform: rotateY(-20deg);
+}
+
+.spine {
+	background:black;
+	width: 5px;
+	height: 516px;
+	position: absolute;
+	top: 0;
+	left:0;
+
+
+  -webkit-transform: rotateY(90deg);
+	   -moz-transform: rotateY(90deg);
+	        transform: rotateY(90deg);
+
+	-webkit-transform-origin: 0;
+	   -moz-transform-origin: 0;
+	        transform-origin: 0;
+}
+/* BOOK */
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+	.bookWrap {
+		margin:37px auto;
+		height:519px;
+		width:345px;
+		margin-top:100px;
+		margin-bottom: 200px;	
+		position:relative;
+		margin-left: 150px;
+	
+		-webkit-perspective: 1200px;
+		   -moz-perspective: 1200px;
+				perspective: 1200px;
+	}
+	
+	.book {
+		background-image: url('/website/images/descriptionlivre.png');
+		height:519px;
+		width:345px;
+		position:absolute;
+		left:60px;
+		top:-30px;
+	
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+		
+		-webkit-transition: -webkit-transform .5s ease 0s;
+		   -moz-transition: -moz-transform .5s ease 0s;
+				transition: transform .5s ease 0s;
+		
+		-webkit-border-radius: 0 7px 7px 0;
+		   -moz-border-radius: 0 7px 7px 0;
+				border-radius: 0 7px 7px 0;
+		
+		-webkit-perspective: 1200px;
+		   -moz-perspective: 1200px;
+				perspective: 1200px;
+	}
+	
+	.bookIntro {
+		-webkit-transform: rotateY(30deg);
+		 -moz-transform: rotateY(30deg);
+				transform: rotateY(30deg);
+	}
+	
+	.cover {
+		position:absolute;
+		left:0;
+		top:-30px;
+	
+		height: 100%;
+		width: 345px;
+	
+		max-width: 345px;
+		max-height: 519px;
+	
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+				backface-visibility: hidden;
+	
+		-webkit-border-radius: 0 4px 4px 0;
+		   -moz-border-radius: 0 4px 4px 0;
+				border-radius: 0 4px 4px 0;
+	
+		-webkit-transition: -webkit-transform .5s ease 0s, width .5s ease 0s;
+		   -moz-transition: -moz-transform .5s ease 0s, width .5s ease 0s;
+				transition: transform .5s ease 0s, width .5s ease 0s;
+	
+		-webkit-transform-origin: 0;
+		   -moz-transform-origin: 0;
+				transform-origin: 0;
+	}
+	
+	.cover:hover {	
+		width:30px;
+		
+		-webkit-transform: rotateY(-20deg);
+		   -moz-transform: rotateY(-20deg);
+				transform: rotateY(-20deg);
+	}
+	
+	.spine {
+		background:black;
+		width: 60px;
+		height: 516px;
+		position: absolute;
+		top: -30px;
+		left:0;
+	
+	
+	  -webkit-transform: rotateY(90deg);
+		   -moz-transform: rotateY(90deg);
+				transform: rotateY(90deg);
+	
+		-webkit-transform-origin: 0;
+		   -moz-transform-origin: 0;
+				transform-origin: 0;
+	}
+	.col-md-9{
+		width:100%;
+		margin-left:2px;
+	}
+	#btnMenu{
+		font-size: 90%;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: -15px;
+	}
+	.bookWrap{
+		margin-left: 35px;
+		margin-right: auto;
+	}
+	#btnAccueil{
+		margin:5%;
+		margin-left: 50px;
+	}
+	footer{
+		color:white;
+		position:relative;
+		bottom:0px;
+		width:100%;
+		font-weight: bold;
+	}
+}
+
+@media (min-width:1100px){
+	body{
+		background-image: url('/website/images/bigScreen.jpg');
+	}
+	#header{
+		margin-left: 0;
+		margin-top: 0;
+		margin-right:0;
+	}
+	#btnAccueil{
+		margin:5%;
+		margin-left:8%;
+		font-size: xx-large;
+	}
+	#btnMenu{
+		font-size: xx-large;
+		margin-top:50px;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-bottom: -15px;
+	}
+}
