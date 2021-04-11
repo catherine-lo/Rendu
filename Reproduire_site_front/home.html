@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<!-- Spécification du langage de la page et du sens de lecture -->
+<html lang="fr" dir="ltr">
+
+<head>
+
+  <!-- Prise en charge des accents et autres caractères spéciaux -->
+  <meta charset="utf-8" />
+  <!-- (meta) Pour être responsive et éviter une mise à l'échelle automatique -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- CDN de font awesome pour l'utilisation des fa-fa et des icones -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- CDN de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <!-- Lien avec la page CSS (toujours après Bootstrap pour éviter les bug) -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lien éventuel pour l'utilisation d'une police -->
+  <link href="" rel="stylesheet">
+  <!-- Lien pour placer une icone dans l'onglet, avant le titre de la page -->
+  <link rel="icon" href=".png">
+  <!-- Titre de la page affiché dans l'onglet -->
+  <title>Home</title>
+</head>
+
+<body>
+
+  <!-- First navbar with collapse -->
+ <nav class="navbar navbar-expand-md navbar-light bg-white">
+   <a class="navbar-brand" href="#">
+     <img src="assets/Logo.png" alt="Menu" >
+   </a>
+   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+       <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarCollapse">
+   <div class="navbar-nav">
+     <a href="#" class="nav-item nav-link">HOME</a>
+     <a href="#" class="nav-item nav-link">SHOP</a>
+     <a href="#" class="nav-item nav-link">MAGAZINE</a>
+   </div>
+
+    <div class="navbar-nav ml-auto">
+      <a class="navbar-brand" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+    </svg></a>
+    <div class="navbar-nav ml-auto">
+        <a href="#" class="nav-item nav-link">Login</a>
+    </div>
+  </div>
+</nav>
+</div>
+
+    <!-- Second navbar julien  -->
+
+
+    <div class="di-flex">
+       <div class="col-12 col-sm">
+         <form class="container-fluid d-flex p-4">
+           <input class="mr-5" type="image" id="image" alt="Magnifying glass" src="./assets/Search.png">
+           <input class="col-9 col-sm search-input" type="search" placeholder="Search" aria-label="Search">
+         </form>
+       </div>
+       <div class="dropdown col-sm-3 px-4 col-12 d-flex align-items-center">
+         <a class="nav-link dropdown-toggle w-100 border-bottom border-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Best Match
+         </a>
+         <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdownMenuLink">
+           <li><a class="dropdown-item" href="#">Favorites</a></li>
+           <li><a class="dropdown-item" href="#">Latest</a></li>
+           <li><a class="dropdown-item" href="#">Trendy</a></li>
+         </ul>
+       </div>
+     </div>
+
+
+    <!-- Price Range with two sliders -->
+    <div class="container-fluid">
+
+        <div class="row">
+          <!-- Options -->
+          <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+
+            <!-- 3 dropdown buttons  -->
+            <p class="small text-muted text-uppercase mb-2">FILTER BY</p>
+            <!-- Collection -->
+        <div class="row">
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Collection
+              </button>
+              <div class="dropdown-menu dropdown-menu-left">
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Color -->
+          <div class="row">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Color
+                </button>
+                <div class="dropdown-menu dropdown-menu-left">
+                </div>
+              </div>
+            </div>
+              <hr>
+          <!-- Category -->
+            <div class="row">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default dropdown-toggle text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Category
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-left">
+                  </div>
+                </div>
+              </div>
+                <hr>
+        <!-- Price Range -->
+            <div class="row">
+              <span>Price Range</span>
+            </div>
+            <div class="row">
+              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1">
+                <input type="range" min="1" max="100" value="1"   class="slider" id="myRange">
+              </div>
+              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                <input type="range" min="1" max="100" value="100" class="slider" id="myRange">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-5 col-lg-6 col-md-8 col-sm-4 col-5">
+                <span>$0</span>
+              </div>
+              <div class="col-xl-7 col-lg-6 col-md-4 col-sm-8 col-7">
+                <span>$10000+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 1 -->
+          <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+            <!-- product photo -->
+            <div class="card">
+          <div class="view zoom overlay ">
+            <a href="#!">
+              <div class="mask">
+                <img class="img-fluid w-10 col-md-8"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+                <div class="mask rgba-black-slight"></div>
+              </div>
+            </a>
+          </div>
+            <!-- product describtion + price -->
+          <div class="card-body text-left">
+            <h6 class="mb-3">
+              <span class="text-black"><b>Coombes</b></span>
+              <span class="text-black">$2,600</span>
+            </h6>
+            <!-- describtion in gray -->
+            <p class="small text-muted text-uppercase mb-2">LOUNGE</p>
+            <!-- rating stars -->
+            <div class="rating">
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="far fa-star fa-sm text-dark"></i>
+            <!-- cart plus -->
+                <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+              <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+                </button>
+
+            </div>
+          </div>
+        </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+            <!-- product photo -->
+            <div class="card">
+          <div class="view zoom overlay ">
+            <a href="#!">
+              <div class="mask">
+                <img class="img-fluid w-10 col-md-8"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+                <div class="mask rgba-black-slight"></div>
+              </div>
+            </a>
+          </div>
+            <!-- product describtion + price -->
+          <div class="card-body text-left">
+            <h6 class="mb-3">
+              <span class="text-black"><b>Keeve Set</b></span>
+              <span class="text-black ml-auto">$590</span>
+            </h6>
+            <!-- describtion in gray -->
+            <p class="small text-muted text-uppercase mb-2">TABLE & CHAIRS</p>
+            <!-- rating stars -->
+            <div class="rating">
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="far fa-star fa-sm text-dark"></i>
+            <!-- cart plus -->
+                <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+              <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+                </button>
+
+            </div>
+          </div>
+        </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+            <!-- product photo -->
+            <div class="card">
+          <div class="view zoom overlay ">
+            <a href="#!">
+              <div class="mask">
+                <img class="img-fluid w-10 col-md-8"
+                  src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+                <div class="mask rgba-black-slight"></div>
+              </div>
+            </a>
+          </div>
+            <!-- product describtion + price -->
+          <div class="card-body text-left">
+            <h6 class="mb-3">
+              <span class="text-black"><b>Nillè</b></span>
+              <span class="text-black">$950</span>
+            </h6>
+            <!-- describtion in gray -->
+            <p class="small text-muted text-uppercase mb-2">ARMCHAIR</p>
+            <!-- rating stars -->
+            <div class="rating">
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="fas fa-star fa-sm text-dark"></i>
+                <i class="far fa-star fa-sm text-dark"></i>
+            <!-- cart plus -->
+                <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+              <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+                </button>
+
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+      <div class="row">
+        <!-- Options -->
+        <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card">
+        <div class="view zoom overlay ">
+          <a href="#!">
+            <div class="mask">
+              <img class="img-fluid w-10 col-md-8"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+          </a>
+        </div>
+          <!-- product describtion + price -->
+        <div class="card-body text-left">
+          <h6 class="mb-3">
+            <span class="text-black"><b>Blanko</b></span>
+            <span class="text-black">$90</span>
+          </h6>
+          <!-- describtion in gray -->
+          <p class="small text-muted text-uppercase mb-2">SIDE TABLE</p>
+          <!-- rating stars -->
+          <div class="rating">
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="far fa-star fa-sm text-dark"></i>
+          <!-- cart plus -->
+              <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+              </button>
+
+          </div>
+        </div>
+      </div>
+
+        </div>
+
+        <!-- Card 1 -->
+        <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card">
+        <div class="view zoom overlay ">
+          <a href="#!">
+            <div class="mask">
+              <img class="img-fluid w-10 col-md-8"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+          </a>
+        </div>
+          <!-- product describtion + price -->
+        <div class="card-body text-left">
+          <h6 class="mb-3">
+            <span class="text-black"><b>Momo</b></span>
+            <span class="text-black">$890</span>
+          </h6>
+          <!-- describtion in gray -->
+          <p class="small text-muted text-uppercase mb-2">SHELVES</p>
+          <!-- rating stars -->
+          <div class="rating">
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="far fa-star fa-sm text-dark"></i>
+          <!-- cart plus -->
+              <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+              </button>
+
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card">
+        <div class="view zoom overlay ">
+          <a href="#!">
+            <div class="mask">
+              <img class="img-fluid w-10 col-md-8"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+          </a>
+        </div>
+          <!-- product describtion + price -->
+        <div class="card-body text-left">
+          <h6 class="mb-3">
+            <span class="text-black"><b>Penemillè</b></span>
+            <span class="text-black">$120</span>
+          </h6>
+          <!-- describtion in gray -->
+          <p class="small text-muted text-uppercase mb-2">CHAIR</p>
+          <!-- rating stars -->
+          <div class="rating">
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="far fa-star fa-sm text-dark"></i>
+          <!-- cart plus -->
+              <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+              </button>
+
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="container col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+          <div class="card">
+        <div class="view zoom overlay ">
+          <a href="#!">
+            <div class="mask">
+              <img class="img-fluid w-10 col-md-8"
+                src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+          </a>
+        </div>
+          <!-- product describtion + price -->
+        <div class="card-body text-left">
+          <h6 class="mb-3">
+            <span class="text-black"><b>Kappu</b></span>
+            <span class="text-black">$420</span>
+          </h6>
+          <!-- describtion in gray -->
+          <p class="small text-muted text-uppercase mb-2">SHELVES</p>
+          <!-- rating stars -->
+          <div class="rating">
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="fas fa-star fa-sm text-dark"></i>
+              <i class="far fa-star fa-sm text-dark"></i>
+          <!-- cart plus -->
+              <button type="button" class="btn btn-default btn-sm mr-1 mb-2 ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+              </button>
+
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<div class="pagination col-md-8">
+<li id="current" class="page-item active"><a class="page-link" href="#">1</a></li>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">7</a>
+  <a href="#">8</a>
+  <a href="#">9</a>
+  <a href="#">10</a>
+  <a href="#">&raquo;</a>
+</div>
+
+
+
+
+
+  <!-- CDN JavaScript toujours à la fin du body pour éviter les bug -->
+  <!-- D'abord le CDN de JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Puis le CDN du Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- Et enfin le CDN de Bootstrap.js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Sweet alert 2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <!-- Lien avec la page JS (toujours après les CDN de JQuery/AngularJs) -->
+  <script src=".js"></script>
+
+</body>
+
+
+
+</html>
+
+<?php
+?>

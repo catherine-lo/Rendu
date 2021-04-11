@@ -1,0 +1,88 @@
+
+
+
+.Menu{
+width:40px;
+}
+
+.page-link{
+  color: black;
+  /* margin-left: 30px; */
+
+}
+
+#current a{
+background-color: black;
+
+}
+
+.btn{
+      width: 235px;
+  }
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+/* Price range */
+.slider {
+    -webkit-appearance: none;
+    height: 3px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: white;
+    border-color: black;
+    cursor: pointer;
+  }
+
+  .row{
+      padding: 5px;
+  }
+
+  .di-flex {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap:wrap;
+    color: black;
+}
+
+a:visited,
+a:link,
+a:active,
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-toggle::after {
+      text-align: right;
+      float: right;
+      position: absolute;
+      display: block;
+      top: 50%;
+      right: 40px;
+    }
+
+.search-input {
+  border: none;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
